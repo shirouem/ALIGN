@@ -20,7 +20,7 @@ export function Header() {
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className={`fixed left-0 right-0 top-0 z-50 transition-all duration-300 ${scrolled ? "bg-black/80 backdrop-blur-md py-4" : "bg-transparent py-6"
+            className={`fixed left-0 right-0 top-0 z-50 transition-all duration-300 ${scrolled ? "bg-black/40 backdrop-blur-md py-4" : "bg-transparent py-6"
                 }`}
         >
             <div className="container mx-auto flex max-w-7xl items-center justify-between px-6 md:px-12">
