@@ -64,7 +64,7 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
                 >
-                    The internet's launchpad - bridging the gap between raw distribution and product infrastructure.
+                    Launch faster on the internet’s founder platform.
                 </motion.p>
 
                 <motion.div
