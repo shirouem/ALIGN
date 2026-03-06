@@ -64,7 +64,7 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
                 >
-                    Bridging the gap between raw distribution and product infrastructure. The engine for creators ready to scale beyond sponsorship.
+                    The internet's launchpad - bridging the gap between raw distribution and product infrastructure.
                 </motion.p>
 
                 <motion.div
