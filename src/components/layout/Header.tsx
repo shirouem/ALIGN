@@ -43,12 +43,17 @@ export default function Header() {
                         </motion.div>
                         <motion.div whileHover={{ y: -1 }} whileTap={{ scale: 0.95 }}>
                             <Link href="#pillars" className="text-[14px] font-medium text-white hover:text-white/80 transition-all duration-200 block">
-                                The Core
+                                Framework
                             </Link>
                         </motion.div>
                         <motion.div whileHover={{ y: -1 }} whileTap={{ scale: 0.95 }}>
-                            <Link href="#model" className="text-[14px] font-medium text-white hover:text-white/80 transition-all duration-200 block">
-                                The Model
+                            <Link href="#agentic-engine" className="text-[14px] font-medium text-white hover:text-white/80 transition-all duration-200 block">
+                                Agentic Engine
+                            </Link>
+                        </motion.div>
+                        <motion.div whileHover={{ y: -1 }} whileTap={{ scale: 0.95 }}>
+                            <Link href="#pricing" className="text-[14px] font-medium text-white hover:text-white/80 transition-all duration-200 block">
+                                Pricing
                             </Link>
                         </motion.div>
                     </nav>
@@ -88,10 +93,13 @@ export default function Header() {
                             Philosophy
                         </Link>
                         <Link href="#pillars" className="text-base font-medium text-white drop-shadow-sm hover:text-white/80 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
-                            The Core
+                            Framework
                         </Link>
-                        <Link href="#model" className="text-base font-medium text-white drop-shadow-sm hover:text-white/80 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
-                            The Model
+                        <Link href="#agentic-engine" className="text-base font-medium text-white drop-shadow-sm hover:text-white/80 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+                            Agentic Engine
+                        </Link>
+                        <Link href="#pricing" className="text-base font-medium text-white drop-shadow-sm hover:text-white/80 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+                            Pricing
                         </Link>
                         <button className="h-12 flex items-center justify-center rounded-full bg-white px-6 text-sm font-semibold text-black transition-all duration-300 hover:bg-slate-50 w-full shadow-md mt-2">
                             Request Access

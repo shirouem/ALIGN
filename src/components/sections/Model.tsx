@@ -15,28 +15,12 @@ export default function Model() {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                     >
                         <h2 className="text-4xl md:text-5xl font-medium tracking-tighter text-slate-900 mb-8">
-                            Aligned Incentives.<br />Shared Upside.
+                            Not influencer marketing.<br />Not affiliate systems.<br />Not marketplaces.
                         </h2>
-                        <p className="text-slate-500 text-xl mb-10 leading-relaxed font-light">
-                            We don&apos;t act like an agency. We act like co-founders. We invest our infrastructure, team, and technology in exchange for a revenue share.
+                        <p className="text-slate-500 text-2xl mb-10 leading-relaxed font-light">
+                            Those are static.<br />
+                            <strong className="text-slate-900 font-medium tracking-tight">ALIGN is adaptive.</strong>
                         </p>
-
-                        <div className="space-y-6">
-                            <div className="flex items-start gap-4">
-                                <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-black flex items-center justify-center text-white text-xs font-bold">1</div>
-                                <div>
-                                    <h4 className="text-lg font-semibold text-slate-900">No Monthly Retainers</h4>
-                                    <p className="text-slate-500">We don&apos;t charge for hours. We charge for results.</p>
-                                </div>
-                            </div>
-                            <div className="flex items-start gap-4">
-                                <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-black flex items-center justify-center text-white text-xs font-bold">2</div>
-                                <div>
-                                    <h4 className="text-lg font-semibold text-slate-900">Turnkey Infrastructure</h4>
-                                    <p className="text-slate-500">We bring the tech stack, you bring the vision.</p>
-                                </div>
-                            </div>
-                        </div>
                     </motion.div>
 
                     <motion.div

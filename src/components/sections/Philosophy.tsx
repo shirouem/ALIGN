@@ -33,7 +33,7 @@ export default function Philosophy() {
             >
                 <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-10">
                     <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-medium tracking-tighter text-white max-w-2xl">
-                        The modern economy is split. <span className="text-slate-500">Owning attention vs owning the product.</span>
+                        Revenue is not created by individuals. <span className="text-slate-500">It emerges from overlapping influence.</span>
                     </motion.h2>
 
                     <motion.div variants={itemVariants} className="flex gap-8 items-end">
@@ -75,17 +75,17 @@ export default function Philosophy() {
                 <div className="grid gap-px bg-white/10 border border-white/10 rounded-2xl overflow-hidden md:grid-cols-2">
                     <motion.div variants={itemVariants} className="bg-[#0A0A0A] p-12 hover:bg-[#0F0F0F] transition-colors group">
                         <span className="material-symbols-outlined text-slate-500 text-4xl mb-6 group-hover:text-white transition-colors">podcasts</span>
-                        <h3 className="text-2xl font-medium text-white mb-4">Distribution without Infrastructure</h3>
+                        <h3 className="text-2xl font-medium text-white mb-4">The Individual Myth</h3>
                         <p className="text-slate-400 leading-relaxed">
-                            Creators have massive reach but lack the operational backbone. They leave millions on the table relying on simple sponsorships.
+                            Every existing system forces it into a straight line, assuming one person or one click is responsible for the entire outcome.
                         </p>
                     </motion.div>
 
                     <motion.div variants={itemVariants} className="bg-[#0A0A0A] p-12 hover:bg-[#0F0F0F] transition-colors group">
                         <span className="material-symbols-outlined text-slate-500 text-4xl mb-6 group-hover:text-white transition-colors">inventory_2</span>
-                        <h3 className="text-2xl font-medium text-white mb-4">Product without Distribution</h3>
+                        <h3 className="text-2xl font-medium text-white mb-4">Broken Attribution</h3>
                         <p className="text-slate-400 leading-relaxed">
-                            Founders build incredible systems but struggle to break through the noise. CAC spirals without organic trust.
+                            The straight line system fails. True attribution must recognize how influence compounds across multiple, interconnected touchpoints.
                         </p>
                     </motion.div>
                 </div>

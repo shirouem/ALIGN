@@ -1,123 +1,89 @@
 "use client";
 
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Pillars() {
-    const containerVariants: Variants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: { staggerChildren: 0.2 }
-        }
-    };
-
-    const itemVariants: Variants = {
-        hidden: { opacity: 0, y: 40 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } }
-    };
-
     return (
-        <section id="pillars" className="bg-background-soft text-slate-900 py-32 px-6 lg:px-8">
-            <div className="mx-auto max-w-7xl">
+        <section id="pillars" className="relative bg-[#050505] text-white py-32 px-6 lg:px-8 border-t border-white/5 overflow-hidden">
+            <div className="relative z-10 mx-auto max-w-7xl">
+                {/* Section Header */}
                 <motion.div
-                    className="mb-20"
+                    className="mb-24 max-w-3xl"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.6 }}
+                    transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 >
-                    <h2 className="text-4xl md:text-5xl font-medium tracking-tighter text-slate-900 mb-6">The Alignment Layer</h2>
-                    <p className="text-xl text-slate-500 max-w-2xl font-light">
-                        We are the missing infrastructure. A complete stack to convert attention into enterprise value.
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight text-white mb-6 leading-[1.1]">
+                        Architect the system.<br className="hidden md:block" />
+                        <span className="text-slate-500">Not the negotiation.</span>
+                    </h2>
+                    <p className="text-xl text-slate-400 font-light leading-relaxed">
+                        Track revenue at the system level—not by clicks, links, or last-touch gestures. Actual revenue mapped across contributors, distributed autonomously.
                     </p>
                 </motion.div>
 
-                <motion.div
-                    className="space-y-6"
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, margin: "-100px" }}
-                >
-                    {/* Pillar 1 */}
-                    <motion.div variants={itemVariants} className="group relative overflow-hidden rounded-3xl bg-white shadow-sm border border-slate-200 transition-all hover:shadow-md">
-                        <div className="absolute top-0 left-0 w-full h-full bg-accent-orange/50 -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <div className="flex flex-col md:flex-row h-full">
-                            <div className="p-10 md:w-1/2 flex flex-col justify-center">
-                                <div className="mb-4 inline-flex items-center rounded-full bg-orange-100 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-orange-700 w-max">
-                                    Pillar 01
-                                </div>
-                                <h3 className="text-3xl font-medium text-slate-900 mb-4 tracking-tight">Offer Engineering</h3>
-                                <p className="text-slate-600 text-lg leading-relaxed">
-                                    Structuring high-ticket offers and recurring revenue models that resonate with your specific audience segments. We architect the value ladder.
-                                </p>
+                {/* Bento Grid layout */}
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+                    
+                    {/* BOX 1: Programmable Campaigns (Large) */}
+                    <motion.div
+                        className="col-span-1 md:col-span-8 group relative overflow-hidden rounded-[2rem] bg-white/[0.02] backdrop-blur-2xl border border-white/[0.08] transition-all hover:bg-white/[0.04] hover:border-white/[0.15] flex flex-col justify-between"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-100px" }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                    >
+                        {/* Inner subtle glow */}
+                        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+
+                        <div className="p-10 z-10 md:w-2/3">
+                            <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-8 shadow-inner">
+                                <span className="material-symbols-outlined text-slate-300 text-2xl">code_blocks</span>
                             </div>
-                            <div className="md:w-1/2 bg-slate-100 min-h-[300px] md:min-h-0 relative overflow-hidden">
-                                <div className="absolute inset-0 flex items-center justify-center bg-accent-orange/30">
-                                    <motion.div
-                                        whileHover={{ scale: 1.05, rotate: 2 }}
-                                        className="w-3/4 h-3/4 bg-white/50 backdrop-blur-sm rounded-xl border border-white/60 shadow-lg flex items-center justify-center"
-                                    >
-                                        <span className="material-symbols-outlined text-orange-300 text-6xl opacity-50">architecture</span>
-                                    </motion.div>
-                                </div>
-                            </div>
+                            <h3 className="text-3xl font-medium text-white mb-4 tracking-tight">Programmable Campaigns</h3>
+                            <p className="text-slate-400 text-lg leading-relaxed font-light">
+                                Replace manual negotiations with codified rules. Define nested tier structures, logic-based revenue shares, and strict participation constraints entirely at the system level.
+                            </p>
+                        </div>
+                        {/* Visual motif: Frosted code blocks */}
+                        <div className="absolute right-0 bottom-0 top-0 w-1/3 opacity-40 group-hover:opacity-100 transition-opacity duration-700 hidden md:flex flex-col justify-center items-end pr-8 gap-4 pointer-events-none">
+                            <motion.div className="h-10 w-48 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10 flex items-center px-4 gap-3 shadow-[0_8px_32px_rgba(0,0,0,0.5)]" whileHover={{ scale: 1.05 }}>
+                                <div className="w-2 h-2 rounded-full bg-slate-300"></div>
+                                <div className="w-24 h-2 rounded-full bg-white/20"></div>
+                            </motion.div>
+                            <motion.div className="h-10 w-64 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10 flex items-center px-4 gap-3 ml-8 shadow-[0_8px_32px_rgba(0,0,0,0.5)]" whileHover={{ scale: 1.05 }}>
+                                <div className="w-2 h-2 rounded-full bg-slate-500"></div>
+                                <div className="w-32 h-2 rounded-full bg-white/20"></div>
+                            </motion.div>
+                            <motion.div className="h-10 w-56 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10 flex items-center px-4 gap-3 ml-4 shadow-[0_8px_32px_rgba(0,0,0,0.5)]" whileHover={{ scale: 1.05 }}>
+                                <div className="w-2 h-2 rounded-full bg-white/80"></div>
+                                <div className="w-20 h-2 rounded-full bg-white/20"></div>
+                            </motion.div>
                         </div>
                     </motion.div>
 
-                    {/* Pillar 2 */}
-                    <motion.div variants={itemVariants} className="group relative overflow-hidden rounded-3xl bg-white shadow-sm border border-slate-200 transition-all hover:shadow-md">
-                        <div className="absolute top-0 left-0 w-full h-full bg-accent-blue/50 -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <div className="flex flex-col md:flex-row h-full">
-                            <div className="md:w-1/2 bg-slate-100 min-h-[300px] md:min-h-0 relative overflow-hidden order-last md:order-first">
-                                <div className="absolute inset-0 flex items-center justify-center bg-accent-blue/30">
-                                    <motion.div
-                                        whileHover={{ scale: 1.05, rotate: -2 }}
-                                        className="w-3/4 h-3/4 bg-white/50 backdrop-blur-sm rounded-xl border border-white/60 shadow-lg flex items-center justify-center"
-                                    >
-                                        <span className="material-symbols-outlined text-blue-300 text-6xl opacity-50">filter_alt</span>
-                                    </motion.div>
-                                </div>
+                    {/* BOX 2: Autonomous Payouts (previously BOX 5) */}
+                    <motion.div
+                        className="col-span-1 md:col-span-4 group relative overflow-hidden rounded-[2rem] bg-white/[0.02] backdrop-blur-2xl border border-white/[0.08] transition-all hover:bg-white/[0.04] hover:border-white/[0.15] flex flex-col justify-between"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-100px" }}
+                        transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+                    >
+                        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                        <div className="p-10 z-10 h-full flex flex-col">
+                           <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-8">
+                                <span className="material-symbols-outlined text-slate-300 text-2xl">task_alt</span>
                             </div>
-                            <div className="p-10 md:w-1/2 flex flex-col justify-center">
-                                <div className="mb-4 inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-blue-700 w-max">
-                                    Pillar 02
-                                </div>
-                                <h3 className="text-3xl font-medium text-slate-900 mb-4 tracking-tight">Funnel Architecture</h3>
-                                <p className="text-slate-600 text-lg leading-relaxed">
-                                    Building the digital pathways—landing pages, email flows, and retargeting—to capture and nurture leads automatically.
-                                </p>
-                            </div>
+                            <h3 className="text-2xl font-medium text-white mb-4 tracking-tight">Autonomous Resolution</h3>
+                            <p className="text-slate-400 leading-relaxed font-light flex-1">
+                                Eliminate tracking links and manual dispute resolution. The framework accurately attributes revenue and executes ledger payouts instantly.
+                            </p>
                         </div>
                     </motion.div>
 
-                    {/* Pillar 3 */}
-                    <motion.div variants={itemVariants} className="group relative overflow-hidden rounded-3xl bg-white shadow-sm border border-slate-200 transition-all hover:shadow-md">
-                        <div className="absolute top-0 left-0 w-full h-full bg-accent-green/50 -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <div className="flex flex-col md:flex-row h-full">
-                            <div className="p-10 md:w-1/2 flex flex-col justify-center">
-                                <div className="mb-4 inline-flex items-center rounded-full bg-green-100 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-green-700 w-max">
-                                    Pillar 03
-                                </div>
-                                <h3 className="text-3xl font-medium text-slate-900 mb-4 tracking-tight">Monetization & Strategy</h3>
-                                <p className="text-slate-600 text-lg leading-relaxed">
-                                    Optimizing pricing elasticity and LTV. We don&apos;t just sell products; we build ecosystems of value that compound over time.
-                                </p>
-                            </div>
-                            <div className="md:w-1/2 bg-slate-100 min-h-[300px] md:min-h-0 relative overflow-hidden">
-                                <div className="absolute inset-0 flex items-center justify-center bg-accent-green/30">
-                                    <motion.div
-                                        whileHover={{ scale: 1.05, rotate: 2 }}
-                                        className="w-3/4 h-3/4 bg-white/50 backdrop-blur-sm rounded-xl border border-white/60 shadow-lg flex items-center justify-center"
-                                    >
-                                        <span className="material-symbols-outlined text-green-300 text-6xl opacity-50">monetization_on</span>
-                                    </motion.div>
-                                </div>
-                            </div>
-                        </div>
-                    </motion.div>
-
-                </motion.div>
+                </div>
             </div>
         </section>
     );

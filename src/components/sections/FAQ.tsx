@@ -5,16 +5,12 @@ import { useState } from "react";
 
 const faqs = [
     {
-        question: "What is the requirement to join?",
-        answer: "We typically work with creators who have >100k engaged followers or founders with >$500k ARR."
-    },
-    {
         question: "Do you take equity?",
         answer: "Generally no. We operate on a revenue share model of the uplift we generate, aligning our cash flow with yours."
     },
     {
         question: "How long is the setup process?",
-        answer: "Our initial infrastructure audit and implementation phase typically takes 2-4 weeks before full launch."
+        answer: "As quick as a single day. Our agentic systems completely automate the infrastructure setup. Unlike traditional affiliate or partnership platforms that require weeks of manual onboarding, ALIGN can be fully operational almost instantly."
     },
     {
         question: "Can I keep my existing team?",
