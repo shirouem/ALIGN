@@ -32,7 +32,7 @@ export default function Model() {
                     >
                         <div className="flex items-center justify-between border-b border-slate-200 pb-6 mb-6">
                             <div>
-                                <div className="text-xs text-slate-400 font-mono uppercase mb-1 tracking-wider">Total Revenue Generated</div>
+                                <div className="text-xs text-slate-400 font-mono uppercase mb-1 tracking-wider">Total Revenue Generated (this is mock data :P)</div>
                                 <div className="text-4xl font-semibold text-slate-900 tabular-nums tracking-tight">$14,203,000</div>
                             </div>
                             <div className="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
