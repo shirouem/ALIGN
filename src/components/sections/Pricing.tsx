@@ -14,7 +14,7 @@ const topTiers = [
     },
     {
         name: "Tier 1",
-        price: "50",
+        price: "100",
         tax: "20%",
         volume: "$5K - $10K",
         desc: "Increased capacity for growing programs gaining momentum.",
