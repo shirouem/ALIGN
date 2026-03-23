@@ -75,7 +75,7 @@ export default function Hero() {
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 >
                     {/* <span className="w-2 h-2 rounded-full bg-slate-900 animate-pulse" /> */}
-                    YC Demo
+                    YC Spring '27 Demo
                 </motion.div>
 
                 <motion.h1
