@@ -73,7 +73,7 @@ export default function Pricing() {
                         Infrastructure that aligns with your scale.
                     </h2>
                     <p className="text-xl text-slate-400 font-light leading-relaxed">
-                        Based on revenue flowing through ALIGN.                   </p>
+                        ALIGN charges for infrastructure and participates in revenue it helps generate.                   </p>
                 </motion.div>
 
                 <div className="flex flex-col gap-6">
