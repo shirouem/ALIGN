@@ -32,6 +32,8 @@ export default function Header() {
                     <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.95 }} className="flex items-center gap-3 pl-4">
                         <Link href="/" className="text-[17px] font-bold tracking-widest text-white drop-shadow-md transition-colors hover:text-white/80 block">
                             ALIGN
+                            <span className="inline-block w-1 h-1 bg-emerald-600 rounded-full"></span>
+
                         </Link>
                     </motion.div>
 
