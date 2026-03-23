@@ -3,7 +3,7 @@ export default function Footer() {
         <footer className="bg-[#F5F7F5] py-12 px-6 border-t border-slate-200">
             <div className="mx-auto max-w-7xl flex flex-col md:flex-row justify-between items-center gap-6">
                 <div className="flex items-center gap-2">
-                    <span className="text-lg font-bold tracking-tight text-slate-900">ALIGN</span>
+                    <span className="text-lg font-bold tracking-widest text-slate-900">ALIGN<span className="text-emerald-600 text-2xl">.</span></span>
                 </div>
 
                 <div className="text-sm text-slate-500">

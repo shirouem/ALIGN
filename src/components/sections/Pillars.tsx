@@ -15,7 +15,7 @@ export default function Pillars() {
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 >
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight text-white mb-6 leading-[1.1]">
-                        Architect the system.<br className="hidden md:block" />
+                        Architect the system<span className="text-emerald-600">.</span><br className="hidden md:block" />
                         <span className="text-slate-500">Not the negotiation.</span>
                     </h2>
                     <p className="text-xl text-slate-400 font-light leading-relaxed">
@@ -25,7 +25,7 @@ export default function Pillars() {
 
                 {/* Bento Grid layout */}
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-                    
+
                     {/* BOX 1: Programmable Campaigns (Large) */}
                     <motion.div
                         className="col-span-1 md:col-span-8 group relative overflow-hidden rounded-[2rem] bg-white/[0.02] backdrop-blur-2xl border border-white/[0.08] transition-all hover:bg-white/[0.04] hover:border-white/[0.15] flex flex-col justify-between"
@@ -73,7 +73,7 @@ export default function Pillars() {
                     >
                         <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                         <div className="p-10 z-10 h-full flex flex-col">
-                           <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-8">
+                            <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-8">
                                 <span className="material-symbols-outlined text-slate-300 text-2xl">task_alt</span>
                             </div>
                             <h3 className="text-2xl font-medium text-white mb-4 tracking-tight">Autonomous Resolution</h3>

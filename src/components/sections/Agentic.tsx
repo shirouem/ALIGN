@@ -94,11 +94,11 @@ export default function Agentic() {
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 >
-                    <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-slate-400 mb-8 shadow-sm">
+                    {/* <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-slate-400 mb-8 shadow-sm">
                         The Agentic Framework
-                    </div>
+                    </div> */}
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight text-white mb-6 leading-[1.1]">
-                        Simulate the system.<br className="hidden md:block" />
+                        Simulate the system<span className="text-emerald-600">.</span><br className="hidden md:block" />
                         <span className="text-slate-600">Not the individual.</span>
                     </h2>
                     <p className="text-xl text-slate-400 font-light leading-relaxed">
@@ -108,7 +108,7 @@ export default function Agentic() {
 
                 {/* Sleek Interactive Layout */}
                 <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
-                    
+
                     {/* Left: Interactive Tab Triggers */}
                     <div className="flex flex-col gap-6 lg:w-1/3 shrink-0">
                         {phases.map((phase) => {
@@ -117,26 +117,22 @@ export default function Agentic() {
                                 <button
                                     key={phase.id}
                                     onClick={() => setActivePhase(phase.id)}
-                                    className={`group flex flex-col text-left transition-all duration-300 pb-6 border-b ${
-                                        isActive ? "border-white/20" : "border-white/5 hover:border-white/10"
-                                    }`}
+                                    className={`group flex flex-col text-left transition-all duration-300 pb-6 border-b ${isActive ? "border-white/20" : "border-white/5 hover:border-white/10"
+                                        }`}
                                 >
                                     <div className="flex items-center gap-4 mb-2">
-                                        <span className={`text-sm font-semibold tracking-widest transition-colors duration-300 ${
-                                            isActive ? "text-emerald-400" : "text-slate-600 group-hover:text-slate-400"
-                                        }`}>
+                                        <span className={`text-sm font-semibold tracking-widest transition-colors duration-300 ${isActive ? "text-emerald-400" : "text-slate-600 group-hover:text-slate-400"
+                                            }`}>
                                             {phase.label}
                                         </span>
-                                        <h3 className={`text-2xl font-medium tracking-tight transition-colors duration-300 ${
-                                            isActive ? "text-white" : "text-slate-500 group-hover:text-slate-300"
-                                        }`}>
+                                        <h3 className={`text-2xl font-medium tracking-tight transition-colors duration-300 ${isActive ? "text-white" : "text-slate-500 group-hover:text-slate-300"
+                                            }`}>
                                             {phase.title}
                                         </h3>
                                     </div>
                                     {/* Subtitle is fully shown when active */}
-                                    <div className={`overflow-hidden transition-all duration-300 ${
-                                        isActive ? "max-h-20 opacity-100" : "max-h-0 opacity-0"
-                                    }`}>
+                                    <div className={`overflow-hidden transition-all duration-300 ${isActive ? "max-h-20 opacity-100" : "max-h-0 opacity-0"
+                                        }`}>
                                         <p className="text-slate-400 font-light mt-2 pl-[2.25rem]">
                                             {phase.subtitle}
                                         </p>

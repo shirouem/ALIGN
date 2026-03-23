@@ -70,7 +70,7 @@ export default function Pricing() {
                 >
 
                     <h2 className="text-4xl md:text-5xl font-medium tracking-tight text-white mb-6 leading-[1.1]">
-                        Infrastructure that aligns with your scale.
+                        Infrastructure that aligns with your scale<span className="text-emerald-600">.</span>
                     </h2>
                     <p className="text-xl text-slate-400 font-light leading-relaxed">
                         ALIGN charges for infrastructure and participates in revenue it helps generate.                   </p>
