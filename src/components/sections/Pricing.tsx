@@ -6,49 +6,49 @@ const topTiers = [
     {
         name: "Tier 0",
         price: "0",
-        tax: "30%",
+        tax: "25%",
         volume: "< $5K",
-        desc: "Zero upfront cost. Deploy and measure.",
-        features: ["Core system access", "Limited computation", "Standard support"],
+        desc: "Deploy, track revenue, and validate the system.",
+        features: ["Core system access", "Limited simulation", "Standard support"],
         highlight: false
     },
     {
         name: "Tier 1",
-        price: "100",
+        price: "2500",
         tax: "20%",
         volume: "$5K - $10K",
-        desc: "Increased computation for active networks.",
-        features: ["Higher computation limits", "Priority processing", "Direct email"],
+        desc: "Run live campaigns with continuous optimization.",
+        features: ["Full execution layer", "Real-time allocation", "Email support"],
         highlight: false
     },
     {
         name: "Tier 2",
-        price: "800",
-        tax: "10%",
+        price: "8000",
+        tax: "12%",
         volume: "$10K - $60K",
-        desc: "Expanded tracking for scaling networks.",
-        features: ["Includes Tier 1 limits", "Increased network size", "Full system access"],
-        highlight: true // Makes it pop slightly
+        desc: "Simulate, deploy, and scale network performance.",
+        features: ["Simulation access", "Larger network limits", "Priority processing"],
+        highlight: true
     }
 ];
 
 const bottomTiers = [
     {
         name: "Tier 3",
-        price: "1,000",
-        tax: "5%",
+        price: "20000",
+        tax: "7%",
         volume: "$60K - $100K",
-        desc: "Maximum routing for high-volume networks.",
-        features: ["Maximum computation limits", "Custom API access", "Dedicated engineering"],
+        desc: "High-volume execution with deeper optimization.",
+        features: ["Advanced simulation", "Custom constraints", "Dedicated support"],
         highlight: false
     },
     {
         name: "Enterprise",
         price: "Custom",
-        tax: "Custom",
+        tax: "3–5%",
         volume: "$100K+",
-        desc: "Custom infrastructure for institutional volume.",
-        features: ["Custom deployment", "SLA guarantees", "Dedicated management"],
+        desc: "Custom deployment for large-scale revenue systems.",
+        features: ["Custom infra", "SLA guarantees", "Dedicated engineering"],
         highlight: false
     }
 ];
