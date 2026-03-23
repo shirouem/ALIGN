@@ -73,8 +73,7 @@ export default function Pricing() {
                         Infrastructure that aligns with your scale.
                     </h2>
                     <p className="text-xl text-slate-400 font-light leading-relaxed">
-                        Platform tax decreases as tracked revenue increases.
-                    </p>
+                        Pricing follows revenue volume on ALIGN.                    </p>
                 </motion.div>
 
                 <div className="flex flex-col gap-6">
