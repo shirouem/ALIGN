@@ -74,8 +74,8 @@ export default function Model() {
                                 <span className="material-symbols-outlined text-slate-500">notifications_active</span>
                             </div>
                             <div>
-                                <div className="text-sm font-semibold text-slate-900">Revenue Alert</div>
-                                <div className="text-xs text-slate-500">Q4 projections exceeded by 24%</div>
+                                <div className="text-sm font-semibold text-slate-900">Allocation Update</div>
+                                <div className="text-xs text-slate-500">Distribution adjusted. Expected revenue increased.</div>
                             </div>
                         </motion.div>
 

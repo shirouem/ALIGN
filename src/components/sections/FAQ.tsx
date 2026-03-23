@@ -6,15 +6,15 @@ import { useState } from "react";
 const faqs = [
     {
         question: "Do you take equity?",
-        answer: "Generally no. We operate on a revenue share model of the uplift we generate, aligning our cash flow with yours."
+        answer: "No. We charge a tax on the revenue we track and allocate."
     },
     {
         question: "How long is the setup process?",
-        answer: "As quick as a single day. Our agentic systems completely automate the infrastructure setup. Unlike traditional affiliate or partnership platforms that require weeks of manual onboarding, ALIGN can be fully operational almost instantly."
+        answer: "One day. System deployment is automated. Bypasses manual onboarding logs."
     },
     {
         question: "Can I keep my existing team?",
-        answer: "Yes. We layer our infrastructure on top of your existing operations. We don't replace; we amplify."
+        answer: "Yes. The system layers over existing operations. It generates allocations, not replacements."
     }
 ];
 

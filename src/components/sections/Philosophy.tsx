@@ -77,7 +77,7 @@ export default function Philosophy() {
                         <span className="material-symbols-outlined text-slate-500 text-4xl mb-6 group-hover:text-white transition-colors">podcasts</span>
                         <h3 className="text-2xl font-medium text-white mb-4">The Individual Myth</h3>
                         <p className="text-slate-400 leading-relaxed">
-                            Every existing system forces it into a straight line, assuming one person or one click is responsible for the entire outcome.
+                            Existing tools track single clicks. They fail to measure compounded distribution across networks.
                         </p>
                     </motion.div>
 
@@ -85,7 +85,7 @@ export default function Philosophy() {
                         <span className="material-symbols-outlined text-slate-500 text-4xl mb-6 group-hover:text-white transition-colors">inventory_2</span>
                         <h3 className="text-2xl font-medium text-white mb-4">Broken Attribution</h3>
                         <p className="text-slate-400 leading-relaxed">
-                            The straight line system fails. True attribution must recognize how influence compounds across multiple, interconnected touchpoints.
+                            Calculates revenue contribution across multiple touchpoints. Models interaction overlap between participants.
                         </p>
                     </motion.div>
                 </div>

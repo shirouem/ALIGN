@@ -12,22 +12,22 @@ const phases = [
         items: [
             {
                 title: "Prelaunch Simulation",
-                desc: "Simulate user routing and landing page flows under volume before exposing brand equity to live traffic.",
+                desc: "Simulates user routing and landing page flows under volume before deploying capital.",
                 icon: "preview"
             },
             {
                 title: "Market Due-Diligence",
-                desc: "Automated macro-alignment checks ensuring campaign parameters fit current market saturation points.",
+                desc: "Verifies campaign parameters against current market saturation data.",
                 icon: "monitoring"
             },
             {
                 title: "Creator Due-Diligence",
-                desc: "Evaluate creators like assets. Assess forward-looking expected revenue contribution, role classification, and historical consistency rather than vanity metrics.",
+                desc: "Calculates expected revenue contribution and historical consistency from creator data.",
                 icon: "shield_person"
             },
             {
                 title: "Network-Level Simulation",
-                desc: "Simulate the system, not individuals. Model how creators interact, identify outperforming combinations, and locate where compounding amplification actually happens.",
+                desc: "Models creator interactions. Identifies outperforming combinations before live deployment.",
                 icon: "hub"
             }
         ]
@@ -40,17 +40,17 @@ const phases = [
         items: [
             {
                 title: "Real-Time Performance",
-                desc: "Revenue attribution and creator performance shifts map instantly. Detect momentum vs decay immediately, eliminating wait times for asynchronous reports.",
+                desc: "Updates revenue attribution and creator contribution instantly. Detects momentum changes in real-time.",
                 icon: "bolt"
             },
             {
                 title: "Autonomous Agents",
-                desc: "Agents actively reallocate distribution toward high-performing nodes and reduce exposure to underperformance. Governed entirely by strict deterministic rules.",
+                desc: "Reallocates distribution toward high-performing nodes. Follows strict deterministic rules.",
                 icon: "memory"
             },
             {
                 title: "Continuous Experimentation",
-                desc: "Structured A/B testing is always on. New creators are introduced under controlled exploration budgets, shifting the balance between exploitation and exploration.",
+                desc: "Introduces new creators under controlled exploration budgets. Shifts capital based on measured output.",
                 icon: "science"
             }
         ]
@@ -63,17 +63,17 @@ const phases = [
         items: [
             {
                 title: "Opportunity Detection",
-                desc: "The system actively surfaces structural leverage, instantly highlighting outperforming creator pairs or under-allocated high-conversion segments.",
+                desc: "Highlights outperforming creator pairs and under-allocated high-conversion segments.",
                 icon: "target"
             },
             {
                 title: "Risk & Failure Detection",
-                desc: "Isolate underperforming segments and detect performance decay or saturation early. Immediate correction signals prevent the slow, silent death of campaigns.",
+                desc: "Isolates underperforming segments. Signals immediate corrections to reallocate budget.",
                 icon: "warning"
             },
             {
                 title: "Post-Campaign Intelligence",
-                desc: "Knowledge compounds. The system internalizes which combination patterns are repeatable and which allocation structures performed best, feeding back into Phase 01.",
+                desc: "Records repeatable combination patterns and successful allocation structures. Feeds data back into simulations.",
                 icon: "auto_graph"
             }
         ]
@@ -102,7 +102,7 @@ export default function Agentic() {
                         <span className="text-slate-600">Not the individual.</span>
                     </h2>
                     <p className="text-xl text-slate-400 font-light leading-relaxed">
-                        A continuous intelligence loop that removes massive manual oversight. Evaluate assets, simulate network-level amplification, and allocate resources autonomously.
+                        Models network-level amplification. Eliminates manual campaign management. Allocates resources autonomously based on tracked revenue.
                     </p>
                 </motion.div>
 

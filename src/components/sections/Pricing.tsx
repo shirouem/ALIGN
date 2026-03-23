@@ -8,8 +8,8 @@ const topTiers = [
         price: "0",
         tax: "30%",
         volume: "< $5K",
-        desc: "Zero upfront cost. Prove the model and establish early traction.",
-        features: ["Core infrastructure included", "Limited capacity", "Standard support channels"],
+        desc: "Zero upfront cost. Deploy and measure.",
+        features: ["Core system access", "Limited computation", "Standard support"],
         highlight: false
     },
     {
@@ -17,8 +17,8 @@ const topTiers = [
         price: "100",
         tax: "20%",
         volume: "$5K - $10K",
-        desc: "Increased capacity for growing programs gaining momentum.",
-        features: ["Higher capacity core infra", "Priority processing queue", "Direct email support"],
+        desc: "Increased computation for active networks.",
+        features: ["Higher computation limits", "Priority processing", "Direct email"],
         highlight: false
     },
     {
@@ -26,8 +26,8 @@ const topTiers = [
         price: "800",
         tax: "10%",
         volume: "$10K - $60K",
-        desc: "Advanced tooling and expanded access for scaling networks.",
-        features: ["Everything in Tier 1", "Higher access limits", "More tools included"],
+        desc: "Expanded tracking for scaling networks.",
+        features: ["Includes Tier 1 limits", "Increased network size", "Full system access"],
         highlight: true // Makes it pop slightly
     }
 ];
@@ -38,8 +38,8 @@ const bottomTiers = [
         price: "1,000",
         tax: "5%",
         volume: "$60K - $100K",
-        desc: "Maximum capacity routing for highly active, large-volume networks.",
-        features: ["Maximum infrastructure capacity", "Custom integrations access", "Dedicated engineering channel"],
+        desc: "Maximum routing for high-volume networks.",
+        features: ["Maximum computation limits", "Custom API access", "Dedicated engineering"],
         highlight: false
     },
     {
@@ -47,8 +47,8 @@ const bottomTiers = [
         price: "Custom",
         tax: "Custom",
         volume: "$100K+",
-        desc: "White-glove infrastructure for institutional-scale environments.",
-        features: ["White-glove onboarding", "SLA uptime guarantees", "Dedicated account management"],
+        desc: "Custom infrastructure for institutional volume.",
+        features: ["Custom deployment", "SLA guarantees", "Dedicated management"],
         highlight: false
     }
 ];
@@ -73,7 +73,7 @@ export default function Pricing() {
                         Infrastructure that aligns with your scale.
                     </h2>
                     <p className="text-xl text-slate-400 font-light leading-relaxed">
-                        No hidden fees. Platform tax decreases dynamically as your network volume grows.
+                        Platform tax decreases as tracked revenue increases.
                     </p>
                 </motion.div>
 

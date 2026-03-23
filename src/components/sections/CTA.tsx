@@ -46,7 +46,7 @@ export default function CTA() {
                     transition={{ duration: 0.5, delay: 0.3 }}
                     className="mt-8 text-sm text-slate-400"
                 >
-                    No commitment required for initial audit.
+                    Audit requires no commitment.
                 </motion.p>
             </div>
         </section>

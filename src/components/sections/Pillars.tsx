@@ -19,7 +19,7 @@ export default function Pillars() {
                         <span className="text-slate-500">Not the negotiation.</span>
                     </h2>
                     <p className="text-xl text-slate-400 font-light leading-relaxed">
-                        Track revenue at the system level—not by clicks, links, or last-touch gestures. Actual revenue mapped across contributors, distributed autonomously.
+                        Define revenue logic at the system level. The engine calculates contribution and executes ledger payouts autonomously.
                     </p>
                 </motion.div>
 
@@ -43,7 +43,7 @@ export default function Pillars() {
                             </div>
                             <h3 className="text-3xl font-medium text-white mb-4 tracking-tight">Programmable Campaigns</h3>
                             <p className="text-slate-400 text-lg leading-relaxed font-light">
-                                Replace manual negotiations with codified rules. Define nested tier structures, logic-based revenue shares, and strict participation constraints entirely at the system level.
+                                Set codified rules for distribution. Define tier structures, logic-based revenue shares, and strict participation constraints.
                             </p>
                         </div>
                         {/* Visual motif: Frosted code blocks */}
@@ -78,7 +78,7 @@ export default function Pillars() {
                             </div>
                             <h3 className="text-2xl font-medium text-white mb-4 tracking-tight">Autonomous Resolution</h3>
                             <p className="text-slate-400 leading-relaxed font-light flex-1">
-                                Eliminate tracking links and manual dispute resolution. The framework accurately attributes revenue and executes ledger payouts instantly.
+                                Eliminates tracking links. Attributes revenue from source data and executes ledger payouts instantly.
                             </p>
                         </div>
                     </motion.div>
